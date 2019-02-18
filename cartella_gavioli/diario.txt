@@ -1,0 +1,5 @@
+diario di Gavioli
+lunedi 18:
+	sistemazione user story e tasks.
+	iniziato il diario.
+	creazione primo sprint.
