@@ -8,7 +8,6 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.os.Bundle;
-import android.os.Handler;
 import android.os.Message;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
@@ -24,7 +23,6 @@ public class AggiungiActivity extends AppCompatActivity
     ListView listViewDetected;
     Button buttonSearch;
     ArrayAdapter<String> adapter,detectedAdapter;
-    static HandleSeacrh handleSeacrh;
     BluetoothDevice bdDevice;
     private ButtonClicked clicked;
     BluetoothAdapter bluetoothAdapter = null;
@@ -39,7 +37,6 @@ public class AggiungiActivity extends AppCompatActivity
         buttonSearch = (Button) findViewById(R.id.buttonSearch);
         bluetoothAdapter = BluetoothAdapter.getDefaultAdapter();
         clicked = new ButtonClicked();
-        handleSeacrh = new HandleSeacrh();
         /*
          * the above declaration is just for getting the paired bluetooth devices;
          * this helps in the removing the bond between paired devices.
@@ -124,15 +121,6 @@ public class AggiungiActivity extends AppCompatActivity
                 Toast.makeText(context, "ACTION_FOUND", Toast.LENGTH_SHORT).show();
 
                 BluetoothDevice device = intent.getParcelableExtra(BluetoothDevice.EXTRA_DEVICE);
-                try
-                {
-                    //device.getClass().getMethod("setPairingConfirmation", boolean.class).invoke(device, true);
-                    //device.getClass().getMethod("cancelPairingUserInput", boolean.class).invoke(device);
-                }
-                catch (Exception e) {
-                    Log.i("Log", "Inside the exception: ");
-                    e.printStackTrace();
-                }
 
                 if(arrayListBluetoothDevices.size()<1) // this checks if the size of bluetooth device is 0,then add the
                 {                                           // device to the arraylist.
@@ -160,25 +148,11 @@ public class AggiungiActivity extends AppCompatActivity
             }
         }
     };
+
     private void startSearching() {
         Log.i("Log", "in the start searching method");
         IntentFilter intentFilter = new IntentFilter(BluetoothDevice.ACTION_FOUND);
         AggiungiActivity.this.registerReceiver(myReceiver, intentFilter);
         bluetoothAdapter.startDiscovery();
-    }
-
-    class HandleSeacrh extends Handler
-    {
-        @Override
-        public void handleMessage(Message msg) {
-            switch (msg.what) {
-                case 111:
-
-                    break;
-
-                default:
-                    break;
-            }
-        }
     }
 }
