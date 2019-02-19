@@ -2,7 +2,6 @@ package com.example.snitch.profside1;
 
 
 import android.bluetooth.BluetoothAdapter;
-import android.bluetooth.BluetoothClass;
 import android.bluetooth.BluetoothDevice;
 import android.content.BroadcastReceiver;
 import android.content.Context;
@@ -18,17 +17,15 @@ import android.widget.*;
 
 import java.lang.reflect.Method;
 import java.util.ArrayList;
-import java.util.Set;
 
 
 public class AggiungiActivity extends AppCompatActivity
 {
     ListView listViewDetected;
-    Button buttonSearch,buttonOn,buttonDesc,buttonOff;
+    Button buttonSearch;
     ArrayAdapter<String> adapter,detectedAdapter;
     static HandleSeacrh handleSeacrh;
     BluetoothDevice bdDevice;
-    BluetoothClass bdClass;
     private ButtonClicked clicked;
     BluetoothAdapter bluetoothAdapter = null;
     ArrayList<BluetoothDevice> arrayListBluetoothDevices = null;
@@ -40,9 +37,6 @@ public class AggiungiActivity extends AppCompatActivity
         setContentView(R.layout.activity_aggiungi);
         listViewDetected = (ListView) findViewById(R.id.listViewDetected);
         buttonSearch = (Button) findViewById(R.id.buttonSearch);
-        buttonOn = (Button) findViewById(R.id.buttonOn);
-        buttonDesc = (Button) findViewById(R.id.buttonDesc);
-        buttonOff = (Button) findViewById(R.id.buttonOff);
         bluetoothAdapter = BluetoothAdapter.getDefaultAdapter();
         clicked = new ButtonClicked();
         handleSeacrh = new HandleSeacrh();
@@ -62,13 +56,11 @@ public class AggiungiActivity extends AppCompatActivity
     protected void onStart() {
         // TODO Auto-generated method stub
         super.onStart();
-        buttonOn.setOnClickListener(clicked);
         buttonSearch.setOnClickListener(clicked);
-        buttonDesc.setOnClickListener(clicked);
-        buttonOff.setOnClickListener(clicked);
         listViewDetected.setOnItemClickListener(listItemClicked);
 
     }
+
     class ListItemClicked implements AdapterView.OnItemClickListener
     {
         @Override
@@ -98,34 +90,6 @@ public class AggiungiActivity extends AppCompatActivity
             Log.i("Log", "The bond is created: "+isBonded);
         }
     }
-    private Boolean connect(BluetoothDevice bdDevice) {
-        Boolean bool = false;
-        try {
-            Log.i("Log", "service method is called ");
-            Class cl = Class.forName("android.bluetooth.BluetoothDevice");
-            Class[] par = {};
-            Method method = cl.getMethod("createBond", par);
-            Object[] args = {};
-            bool = (Boolean) method.invoke(bdDevice);//, args);// this invoke creates the detected devices paired.
-            //Log.i("Log", "This is: "+bool.booleanValue());
-            //Log.i("Log", "devicesss: "+bdDevice.getName());
-        } catch (Exception e) {
-            Log.i("Log", "Inside catch of serviceFromDevice Method");
-            e.printStackTrace();
-        }
-        return bool.booleanValue();
-    };
-
-
-    public boolean removeBond(BluetoothDevice btDevice)
-            throws Exception
-    {
-        Class btClass = Class.forName("android.bluetooth.BluetoothDevice");
-        Method removeBondMethod = btClass.getMethod("removeBond");
-        Boolean returnValue = (Boolean) removeBondMethod.invoke(btDevice);
-        return returnValue.booleanValue();
-    }
-
 
     public boolean createBond(BluetoothDevice btDevice)
             throws Exception
@@ -142,18 +106,9 @@ public class AggiungiActivity extends AppCompatActivity
         @Override
         public void onClick(View view) {
             switch (view.getId()) {
-                case R.id.buttonOn:
-                    onBluetooth();
-                    break;
                 case R.id.buttonSearch:
                     arrayListBluetoothDevices.clear();
                     startSearching();
-                    break;
-                case R.id.buttonDesc:
-                    makeDiscoverable();
-                    break;
-                case R.id.buttonOff:
-                    offBluetooth();
                     break;
                 default:
                     break;
@@ -211,25 +166,7 @@ public class AggiungiActivity extends AppCompatActivity
         AggiungiActivity.this.registerReceiver(myReceiver, intentFilter);
         bluetoothAdapter.startDiscovery();
     }
-    private void onBluetooth() {
-        if(!bluetoothAdapter.isEnabled())
-        {
-            bluetoothAdapter.enable();
-            Log.i("Log", "Bluetooth is Enabled");
-        }
-    }
-    private void offBluetooth() {
-        if(bluetoothAdapter.isEnabled())
-        {
-            bluetoothAdapter.disable();
-        }
-    }
-    private void makeDiscoverable() {
-        Intent discoverableIntent = new Intent(BluetoothAdapter.ACTION_REQUEST_DISCOVERABLE);
-        discoverableIntent.putExtra(BluetoothAdapter.EXTRA_DISCOVERABLE_DURATION, 300);
-        startActivity(discoverableIntent);
-        Log.i("Log", "Discoverable ");
-    }
+
     class HandleSeacrh extends Handler
     {
         @Override
