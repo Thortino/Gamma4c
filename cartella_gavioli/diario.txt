@@ -1,5 +1,10 @@
 diario di Gavioli
 lunedi 18:
-	sistemazione user story e tasks.
+	sistemazione e stima user story e tasks.
 	iniziato il diario.
 	creazione primo sprint.
+	iniziato il codice:fatto scheletro app lato prof
+
+martedi 19:
+	risoluzione di alcuni problemi del giorno precedente
+	prove comunicazione tramite bluetooth
