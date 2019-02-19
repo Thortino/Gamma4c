@@ -1,4 +1,7 @@
-18/02/2019	DeweloperWeek Day 1
+18/02/2019	DeveloperWeek Day 1
 	-Oggi finisco le Tasks per la progettazione
-	-Inoltre configurerò un vecchio telefono Android per provare il
-programma 
+	-Inoltre configurerò un vecchio telefono Android per provare l'app 
+
+19/02/2019 	DeveloperWeek Day 2
+	-Lavori in corso per la creazione di un'app che permette instaurare
+la connessione tra il client e il server
