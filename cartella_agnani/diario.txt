@@ -1,0 +1,5 @@
+19/02/19
+Dopo aver revisionato le user stories e gli sprint in base alle indicazioni del prof e dell'esperienza della prima giornata,
+oggi mi occuperò dei temi e cercherò di occuparmi della parte dei ritardi e della gestione delle entrate posticipate. Mi faRò
+ dare indicazioni dal gestore del codice per eventualmente aiutare in eventuali passi. Dobbiamo e devo inoltre iniziare a gestire
+i profili degli studenti per la gestione di essi nell'applicazione del professore.
