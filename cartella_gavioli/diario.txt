@@ -8,3 +8,7 @@ lunedi 18:
 martedi 19:
 	risoluzione di alcuni problemi del giorno precedente
 	prove comunicazione tramite bluetooth
+	non funziona niente.
+	l'app riesce a trovare i dispositivi vicini e a chiedere il pairing
+mercoledì 20:
+	lavoro alla registrazione degli studenti nel registro.
