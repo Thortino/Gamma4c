@@ -1,5 +1,11 @@
 19/02/19
 Dopo aver revisionato le user stories e gli sprint in base alle indicazioni del prof e dell'esperienza della prima giornata,
-oggi mi occuper� dei temi e cercher� di occuparmi della parte dei ritardi e della gestione delle entrate posticipate. Mi faR�
+oggi mi occuperò dei temi e cercherò di occuparmi della parte dei ritardi e della gestione delle entrate posticipate. Mi faRò
  dare indicazioni dal gestore del codice per eventualmente aiutare in eventuali passi. Dobbiamo e devo inoltre iniziare a gestire
 i profili degli studenti per la gestione di essi nell'applicazione del professore.
+
+20/02/19
+Dopo aver avuto alcuni problemi con l'IDE (incompatibilità con SDK e JDK del progetto) ed averli risolti, oggi la mia
+occupazione sarà quella di provare a gestire "l'interfaccia semplice e funzionale".
+Il programma dovrà avere un'interfaccia nella quale ci siamo posti l'obiettivo che ogni funzionalità abbia la sua schermata.
+
