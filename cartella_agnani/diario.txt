@@ -6,7 +6,6 @@ i profili degli studenti per la gestione di essi nell'applicazione del professor
 
 20/02/19
 Dopo aver avuto alcuni problemi con l'IDE (incompatibilità con SDK e JDK del progetto) ed averli risolti, oggi la mia
-occupazione sarà quella di provare a fare la parte dei ritardi e del controllo della lista degli studenti registrati.
-Il programma dovrà segnare lo studente entrato l'ora successiva se entrato un tot di minuti in ritardo e il professore
-dovrà essere in grado di vedere la lista studenti (presenti e non).
+occupazione sarà quella di provare a gestire "l'interfaccia semplice e funzionale".
+Il programma dovrà avere un'interfaccia nella quale ci siamo posti l'obiettivo che ogni funzionalità abbia la sua schermata.
 
