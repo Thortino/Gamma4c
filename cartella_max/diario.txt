@@ -5,7 +5,7 @@
 19/02/2019 	DevelopersWeek Day 2
 	-Creazione server java TCP su una macchina virtuale del server
 	-Configurzione delle porte per i servizi SSH e HTTP 
-	-inizio la creazione di un'app che permette instaurare
+	-Inizio la creazione di un'app che permette instaurare
 	la connessione tra il client e il server
 20/02/2019 	DevelopersWeek Day 3
 	-Lavori in corso per la creazioene dell 'app 
