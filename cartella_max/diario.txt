@@ -3,7 +3,14 @@
 	-Inoltre configurerò un vecchio telefono Android per provare l'app 
 
 19/02/2019 	DevelopersWeek Day 2
-	-Lavori in corso per la creazione di un'app che permette instaurare
+	-Creazione server java TCP su una macchina virtuale del server
+	-Configurzione delle porte per i servizi SSH e HTTP 
+	-inizio la creazione di un'app che permette instaurare
 	la connessione tra il client e il server
 20/02/2019 	DevelopersWeek Day 3
-	-Lavori in corso...
+	-Lavori in corso per la creazioene dell 'app 
+	-Creazione del programma java per il server
+21/02/2019
+	-Risoluzione dei problemi di comunicazione tra client e il server
+	-Modifiche per il programma per il server
+	
