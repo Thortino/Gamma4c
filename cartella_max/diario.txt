@@ -7,14 +7,17 @@
 	-Configurzione delle porte per i servizi SSH e HTTP 
 	-Inizio la creazione di un'app che permette instaurare
 	la connessione tra il client e il server
+
 20/02/2019 	DevelopersWeek Day 3
 	-Creazione dello scheletro dell 'app Client 
 	-Creazione del programma java sul Server
-21/02/2019
+
+21/02/2019	DevelopersWeek Day 4
 	-Risoluzione dei problemi di comunicazione tra Client e il Server
 	-Modifiche del app per il Client
 	-Modifiche del socket per il programma Server
-22/02/2019
+
+22/02/2019	DevelopersWeek Day 5
 	-Inizio test tra il Client e il Server
 	-Test di connessione
 	-Test di scambio dei dati
