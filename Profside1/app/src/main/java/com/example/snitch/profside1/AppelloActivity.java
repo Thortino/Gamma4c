@@ -54,7 +54,7 @@ public class AppelloActivity extends AppCompatActivity
 
                 for(int i=0;i<2;i++)
                 {
-                    if(device.getAddress().equals(reg.classe[i].getMac())
+                    if(device.getAddress().equals(reg.classe[i].getMac()))
                         mDeviceList.add(reg.classe[i].getName()+"\n"+device.getAddress());
                 }
             }
