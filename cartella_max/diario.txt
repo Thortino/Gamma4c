@@ -8,9 +8,14 @@
 	-Inizio la creazione di un'app che permette instaurare
 	la connessione tra il client e il server
 20/02/2019 	DevelopersWeek Day 3
-	-Lavori in corso per la creazioene dell 'app 
-	-Creazione del programma java per il server
+	-Creazione dello scheletro dell 'app Client 
+	-Creazione del programma java sul Server
 21/02/2019
-	-Risoluzione dei problemi di comunicazione tra client e il server
-	-Modifiche per il programma per il server
-	
+	-Risoluzione dei problemi di comunicazione tra Client e il Server
+	-Modifiche del app per il Client
+	-Modifiche del socket per il programma Server
+22/02/2019
+	-Inizio test tra il Client e il Server
+	-Test di connessione
+	-Test di scambio dei dati
+	-Test risposta dal Server
