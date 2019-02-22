@@ -14,6 +14,14 @@ public class Studente
         this.assenzeTot = 0;
     }
 
+    public Studente(Studente s)
+    {
+        this.name=s.name;
+        this.mac=s.mac;
+        this.presente=s.presente;
+        this.assenzeTot=s.assenzeTot;
+    }
+
     public String getName() {
         return name;
     }
