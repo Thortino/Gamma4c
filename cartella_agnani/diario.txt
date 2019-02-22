@@ -9,3 +9,10 @@ Dopo aver avuto alcuni problemi con l'IDE (incompatibilità con SDK e JDK del pr
 occupazione sarà quella di provare a gestire "l'interfaccia semplice e funzionale".
 Il programma dovrà avere un'interfaccia nella quale ci siamo posti l'obiettivo che ogni funzionalità abbia la sua schermata.
 
+21/02/19
+Seguendo il consiglio di Torricelli, oggi il nostro gruppo si occuperà di consolidare le modifiche necessarie all'applicazione
+per permetterci di arrivare ad una prima release da rendere funmzionale entro l'ultimo giorno, io e Cirimbei ci occuperemo di testare ed
+aiutare con il codice ed ultimare la grafica ed il tema in caso di bug grafici.
+
+22/02/19
+Ultimo giorno di sviluppo del codice, debug dell'applicazione e ultime modifiche al codice.
