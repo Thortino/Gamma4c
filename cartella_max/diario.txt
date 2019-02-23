@@ -22,3 +22,7 @@
 	-Test di connessione
 	-Test di scambio dei dati
 	-Test risposta dal Server
+23/02/2019 	DevelopersWeek Presentation Day
+	-Siamo messi da panico 
+	-Il progetto funziona ma è diviso(App Client, App Docenti, ClientServer)
+	-Speriamo di non fare tanto schifo
