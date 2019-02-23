@@ -118,7 +118,6 @@ public class AggiungiActivity extends AppCompatActivity
             Message msg = Message.obtain();
             String action = intent.getAction();
             if(BluetoothDevice.ACTION_FOUND.equals(action)){
-                Toast.makeText(context, "ACTION_FOUND", Toast.LENGTH_SHORT).show();
 
                 BluetoothDevice device = intent.getParcelableExtra(BluetoothDevice.EXTRA_DEVICE);
 
